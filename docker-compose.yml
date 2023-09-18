@@ -7,11 +7,10 @@ services:
       - "8888:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - .:/var/www/html
     depends_on:
       - php
+    restart: unless-stopped
 
   php:
-    build: .
-    volumes:
-      - .:/var/www/html
+    image: aldotobing/nextapi:accurate
+    restart: unless-stopped
