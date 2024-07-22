@@ -1,6 +1,6 @@
 <?php 
-    $clientId = "ff76499d-6bb5-4d79-9953-fd19e16ddd4c";
-    $clientSecret = "ca4ee0862edb6d9c490985b8d86673e1";
+    $clientId = $client_id;
+    $clientSecret = $client_secret;
 
     $oauthCallback = "http://localhost:8888/oauth-callback.php";
 
